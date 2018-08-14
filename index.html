@@ -198,7 +198,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/掏粪用/" style="font-size: 10px;">掏粪用</a>
+                        <a href="/tags/小tips/" style="font-size: 10px;">小tips</a> <a href="/tags/掏粪用/" style="font-size: 10px;">掏粪用</a>
                     </div>
                 </section>
                 
@@ -282,6 +282,74 @@
     </div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-npm-script添加参数" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2018/08/14/npm-script添加参数/" class="article-date">
+      <time datetime="2018-08-14T13:18:18.000Z" itemprop="datePublished">2018-08-14</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2018/08/14/npm-script添加参数/">npm-script添加参数</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>经常使用 <code>npm run [script]</code>指令来避免繁琐命令。<br>前些天遇到个需求，需要往script里面添加参数，这样就可以复用。</p>
+<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p><code>npm run [script] -- [parameter]</code><br>注意，双破折号和这个参数之间一定有空格。<br>eg:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;copy_to_xcode&quot;: &quot;python3 python_cordova.py&quot;</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure></p>
+<p>有这么一个script，然后打包Cordova时候需要输入ios还是Android，可以用<br><code>npm run copy_to_xcode -- ios</code><br>就直接把ios这个参数传递给了指令， 如下<br><code>python3 python_cordova.py ios</code><br>注意如果script里面有多个指令 &amp;&amp; 连接的，参数只会传递给最后一个指令。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/frontEnd/">frontEnd</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小tips/">小tips</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
   
     <article id="post-markdown常用方法" class="article article-type-post" itemscope itemprop="blogPost">
   

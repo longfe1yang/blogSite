@@ -7,15 +7,20 @@
   
   
   
-  <title>Archives: 2018 | dragonfly</title>
+  <title>npm-script添加参数 | dragonfly</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="dragonfly">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="经常使用 npm run [script]指令来避免繁琐命令。前些天遇到个需求，需要往script里面添加参数，这样就可以复用。 实现npm run [script] -- [parameter]注意，双破折号和这个参数之间一定有空格。eg:123&amp;quot;scripts&amp;quot;: &amp;#123;    &amp;quot;copy_to_xcode&amp;quot;: &amp;quot;python3 pyt">
+<meta name="keywords" content="小tips">
+<meta property="og:type" content="article">
+<meta property="og:title" content="npm-script添加参数">
+<meta property="og:url" content="http://yoursite.com/2018/08/14/npm-script添加参数/index.html">
 <meta property="og:site_name" content="dragonfly">
+<meta property="og:description" content="经常使用 npm run [script]指令来避免繁琐命令。前些天遇到个需求，需要往script里面添加参数，这样就可以复用。 实现npm run [script] -- [parameter]注意，双破折号和这个参数之间一定有空格。eg:123&amp;quot;scripts&amp;quot;: &amp;#123;    &amp;quot;copy_to_xcode&amp;quot;: &amp;quot;python3 pyt">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-14T13:29:47.460Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="dragonfly">
+<meta name="twitter:title" content="npm-script添加参数">
+<meta name="twitter:description" content="经常使用 npm run [script]指令来避免繁琐命令。前些天遇到个需求，需要往script里面添加参数，这样就可以复用。 实现npm run [script] -- [parameter]注意，双破折号和这个参数之间一定有空格。eg:123&amp;quot;scripts&amp;quot;: &amp;#123;    &amp;quot;copy_to_xcode&amp;quot;: &amp;quot;python3 pyt">
   
     <link rel="alternative" href="/atom.xml" title="dragonfly" type="application/atom+xml">
   
@@ -38,8 +43,8 @@
           fancybox: true,
           animate: false,
           isHome: false,
-          isPost: false,
-          isArchive: true,
+          isPost: true,
+          isArchive: false,
           isTag: false,
           isCategory: false,
           open_in_new: true
@@ -278,97 +283,204 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-npm-script添加参数" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a  href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a  href="/2018/08/14/npm-script添加参数/" class="archive-article-date">
-      <time datetime="2018-08-14T13:18:18.000Z" itemprop="datePublished">08-14</time>
+    <div class="article-meta">
+      <a  href="/2018/08/14/npm-script添加参数/" class="article-date">
+      <time datetime="2018-08-14T13:18:18.000Z" itemprop="datePublished">2018-08-14</time>
 </a>
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a  class="archive-article-title" href="/2018/08/14/npm-script添加参数/">npm-script添加参数</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      npm-script添加参数
     </h1>
   
 
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
     <div class="article-category tagcloud">
     <a class="article-category-link" href="/categories/frontEnd/">frontEnd</a>
     </div>
 
 
-          
+        
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小tips/">小tips</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+      </div>
+      
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a  href="/2018/08/06/markdown常用方法/" class="archive-article-date">
-      <time datetime="2018-08-06T14:43:30.000Z" itemprop="datePublished">08-06</time>
-</a>
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a  class="archive-article-title" href="/2018/08/06/markdown常用方法/">markdown常用方法</a>
-    </h1>
-  
-
-
-        <div class="article-info info-on-archive">
+    <div class="article-entry" itemprop="articleBody">
+      
           
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/summary/">summary</a>
+        <p>经常使用 <code>npm run [script]</code>指令来避免繁琐命令。<br>前些天遇到个需求，需要往script里面添加参数，这样就可以复用。</p>
+<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p><code>npm run [script] -- [parameter]</code><br>注意，双破折号和这个参数之间一定有空格。<br>eg:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;copy_to_xcode&quot;: &quot;python3 python_cordova.py&quot;</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure></p>
+<p>有这么一个script，然后打包Cordova时候需要输入ios还是Android，可以用<br><code>npm run copy_to_xcode -- ios</code><br>就直接把ios这个参数传递给了指令， 如下<br><code>python3 python_cordova.py ios</code><br>注意如果script里面有多个指令 &amp;&amp; 连接的，参数只会传递给最后一个指令。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a  href="/2018/08/14/npm-script添加参数/">npm-script添加参数</a></p>
+        <p><span>文章作者:</span><a  href="/" title="访问 泠泠七弦客 的个人博客">泠泠七弦客</a></p>
+        <p><span>发布时间:</span>2018年08月14日 - 21时18分</p>
+        <p><span>最后更新:</span>2018年08月14日 - 21时29分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/08/14/npm-script添加参数/" title="npm-script添加参数">http://yoursite.com/2018/08/14/npm-script添加参数/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/08/14/npm-script添加参数/　　作者: 泠泠七弦客" title=""></span>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
     </div>
 
 
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/掏粪用/">掏粪用</a></li></ul>
-    </div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
+<nav id="article-nav">
+  
+  
+    <a  href="/2018/08/06/markdown常用方法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">markdown常用方法</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#实现"><span class="toc-number">1.</span> <span class="toc-text">实现</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
 
     
+        <section class="changyan" id="comments">
+  <!--<div id="uyan_frame"></div>-->
+  <div id="SOHUCS"></div>
+  <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script>
+  <script type="text/javascript">
+    window.changyan.api.config({
+      appid: 'xxxx',
+      conf: 'xxxxxxxxx'
+    });
+  </script>
+</section>
+    
 
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a  href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a  href="/2018/08/06/markdown常用方法/" title="下一篇: markdown常用方法">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/08/14/npm-script添加参数/">npm-script添加参数</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/08/06/markdown常用方法/">markdown常用方法</a></li></ul>
+    
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+    <script>
+        $(".post-list").addClass("toc-article");
+        // $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+
+
+    <script>
+        
+    </script>
 
 </div>
       <footer id="footer">
@@ -440,18 +552,6 @@ ga('send', 'pageview');
         };
     })
 </script>
-
-    <button class="hide-labels">TAG 开关</button>
-    
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $("button").click(function() {
-                $(".article-info").toggle(200);
-            });
-        });
-    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
