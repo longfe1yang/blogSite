@@ -7,20 +7,20 @@
   
   
   
-  <title>npm-script添加参数 | dragonfly</title>
+  <title>vim简短指令 | dragonfly</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="经常使用 npm run [script]指令来避免繁琐命令。前些天遇到个需求，需要往script里面添加参数，这样就可以复用。 实现npm run [script] -- [parameter]注意，双破折号和这个参数之间一定有空格。eg:123&amp;quot;scripts&amp;quot;: &amp;#123;    &amp;quot;copy_to_xcode&amp;quot;: &amp;quot;python3 pyt">
-<meta name="keywords" content="小tips">
+  <meta name="description" content="翻到指定一行     ［行数］Gw     移动到下一个单词词首e   移动到所在单词的词尾，如果已经是词尾就下一个单词的词尾b   移动到所在单词的词首，如果已经是词首就上一个单词的词首 [num][光标移动指令]。  执行number数量的光标移动[num]I[内容]esc       输入内容num次[num]f[内容]enter       查找第[num]次出现的[内容]%">
+<meta name="keywords" content="掏粪用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="npm-script添加参数">
-<meta property="og:url" content="http://yoursite.com/2018/08/14/npm-script添加参数/index.html">
+<meta property="og:title" content="vim简短指令">
+<meta property="og:url" content="http://yoursite.com/2018/09/12/vim简短指令/index.html">
 <meta property="og:site_name" content="dragonfly">
-<meta property="og:description" content="经常使用 npm run [script]指令来避免繁琐命令。前些天遇到个需求，需要往script里面添加参数，这样就可以复用。 实现npm run [script] -- [parameter]注意，双破折号和这个参数之间一定有空格。eg:123&amp;quot;scripts&amp;quot;: &amp;#123;    &amp;quot;copy_to_xcode&amp;quot;: &amp;quot;python3 pyt">
+<meta property="og:description" content="翻到指定一行     ［行数］Gw     移动到下一个单词词首e   移动到所在单词的词尾，如果已经是词尾就下一个单词的词尾b   移动到所在单词的词首，如果已经是词首就上一个单词的词首 [num][光标移动指令]。  执行number数量的光标移动[num]I[内容]esc       输入内容num次[num]f[内容]enter       查找第[num]次出现的[内容]%">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-14T13:29:47.460Z">
+<meta property="og:updated_time" content="2018-09-12T14:01:17.954Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="npm-script添加参数">
-<meta name="twitter:description" content="经常使用 npm run [script]指令来避免繁琐命令。前些天遇到个需求，需要往script里面添加参数，这样就可以复用。 实现npm run [script] -- [parameter]注意，双破折号和这个参数之间一定有空格。eg:123&amp;quot;scripts&amp;quot;: &amp;#123;    &amp;quot;copy_to_xcode&amp;quot;: &amp;quot;python3 pyt">
+<meta name="twitter:title" content="vim简短指令">
+<meta name="twitter:description" content="翻到指定一行     ［行数］Gw     移动到下一个单词词首e   移动到所在单词的词尾，如果已经是词尾就下一个单词的词尾b   移动到所在单词的词首，如果已经是词首就上一个单词的词首 [num][光标移动指令]。  执行number数量的光标移动[num]I[内容]esc       输入内容num次[num]f[内容]enter       查找第[num]次出现的[内容]%">
   
     <link rel="alternative" href="/atom.xml" title="dragonfly" type="application/atom+xml">
   
@@ -283,11 +283,11 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-npm-script添加参数" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-vim简短指令" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a  href="/2018/08/14/npm-script添加参数/" class="article-date">
-      <time datetime="2018-08-14T13:18:18.000Z" itemprop="datePublished">2018-08-14</time>
+      <a  href="/2018/09/12/vim简短指令/" class="article-date">
+      <time datetime="2018-09-12T14:00:34.000Z" itemprop="datePublished">2018-09-12</time>
 </a>
 
     </div>
@@ -301,7 +301,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      npm-script添加参数
+      vim简短指令
     </h1>
   
 
@@ -311,13 +311,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/frontEnd/">frontEnd</a>
+    <a class="article-category-link" href="/categories/summary/">summary</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小tips/">小tips</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/掏粪用/">掏粪用</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -327,9 +327,17 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>经常使用 <code>npm run [script]</code>指令来避免繁琐命令。<br>前些天遇到个需求，需要往script里面添加参数，这样就可以复用。</p>
-<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p><code>npm run [script] -- [parameter]</code><br>注意，双破折号和这个参数之间一定有空格。<br>eg:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;copy_to_xcode&quot;: &quot;python3 python_cordova.py&quot;</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure></p>
-<p>有这么一个script，然后打包Cordova时候需要输入ios还是Android，可以用<br><code>npm run copy_to_xcode -- ios</code><br>就直接把ios这个参数传递给了指令， 如下<br><code>python3 python_cordova.py ios</code><br>注意如果script里面有多个指令 &amp;&amp; 连接的，参数只会传递给最后一个指令。</p>
+        <p>翻到指定一行     ［行数］G<br>w     移动到下一个单词词首<br>e   移动到所在单词的词尾，如果已经是词尾就下一个单词的词尾<br>b   移动到所在单词的词首，如果已经是词首就上一个单词的词首</p>
+<p>[num][光标移动指令]。  执行number数量的光标移动<br>[num]I[内容]esc       输入内容num次<br>[num]f[内容]enter       查找第[num]次出现的[内容]<br>%          跳转到括号的另一半<br>0          跳到一行的开头<br>$          跳到一行的结尾</p>
+<ul>
+<li>跳到[光标目前所在字母]下一个处<h1 id="跳到-光标目前所在字母-下一个处"><a href="#跳到-光标目前所在字母-下一个处" class="headerlink" title="跳到[光标目前所在字母]下一个处"></a>跳到[光标目前所在字母]下一个处</h1></li>
+</ul>
+<p>gg          跳到文件开头<br>G          跳到文件结尾<br>[num][G或者gg]       跳到第[num]行</p>
+<p>o          新开一行到此行的下一行并切换到insert模式<br>O          新开一行到此行的上一行并切换到insert模式</p>
+<p>x          删除后一个字符<br>X          删除前一个字符</p>
+<p>r[单个字符]        在normal模式下替换[单个字符]</p>
+<p>d[num][w/b/e]         删除[到所在位置之间的所有]字符<br>dd          删除光标所在整行<br>.          重复上一个指令</p>
+<p>v          切换到visual模式，可视化所有光标移动操作</p>
 
       
     </div>
@@ -338,13 +346,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a  href="/2018/08/14/npm-script添加参数/">npm-script添加参数</a></p>
+        <p><span>本文标题:</span><a  href="/2018/09/12/vim简短指令/">vim简短指令</a></p>
         <p><span>文章作者:</span><a  href="/" title="访问 泠泠七弦客 的个人博客">泠泠七弦客</a></p>
-        <p><span>发布时间:</span>2018年08月14日 - 21时18分</p>
-        <p><span>最后更新:</span>2018年08月14日 - 21时29分</p>
+        <p><span>发布时间:</span>2018年09月12日 - 22时00分</p>
+        <p><span>最后更新:</span>2018年09月12日 - 22时01分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/08/14/npm-script添加参数/" title="npm-script添加参数">http://yoursite.com/2018/08/14/npm-script添加参数/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/08/14/npm-script添加参数/　　作者: 泠泠七弦客" title=""></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/09/12/vim简短指令/" title="vim简短指令">http://yoursite.com/2018/09/12/vim简短指令/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/09/12/vim简短指令/　　作者: 泠泠七弦客" title=""></span>
         </p>
         <p>
             <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
@@ -355,18 +363,9 @@
 
 <nav id="article-nav">
   
-    <a  href="/2018/08/14/Hexo常用指令/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Hexo常用指令
-        
-      </div>
-    </a>
   
-  
-    <a  href="/2018/08/06/markdown常用方法/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">markdown常用方法</div>
+    <a  href="/2018/08/17/程序猿七夕表白方式/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">程序猿七夕表白方式</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -378,7 +377,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#实现"><span class="toc-number">1.</span> <span class="toc-text">实现</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#跳到-光标目前所在字母-下一个处"><span class="toc-number">1.</span> <span class="toc-text">跳到[光标目前所在字母]下一个处</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -451,13 +450,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a  href="/2018/08/14/Hexo常用指令/" title="上一篇: Hexo常用指令">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a  href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a  href="/2018/08/06/markdown常用方法/" title="下一篇: markdown常用方法">
+            <a  href="/2018/08/17/程序猿七夕表白方式/" title="下一篇: 程序猿七夕表白方式">
                 <i class="fa fa-angle-right"></i>
             </a>
         
